@@ -9,9 +9,9 @@ def installff():
 _ = installff()
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
-opts = FirefoxOptions()
-opts.add_argument("--headless")
-browser = webdriver.Chrome()
+#opts = FirefoxOptions()
+#opts.add_argument("--headless")
+browser = webdriver.Firefox()
 
 browser.get('http://example.com')
 st.write(browser.page_source)
