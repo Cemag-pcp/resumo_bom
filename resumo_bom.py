@@ -16,7 +16,7 @@ worksheet2 = 'Extração do BOM'
 worksheet3 = '% de perda'
 worksheet4 = 'Custo contabil'
 
-filename = r"C:\Users\pcp\service_account.json"
+filename = "service_account.json"
 
 sa = gspread.service_account(filename)
 sh = sa.open(name_sheet)
