@@ -62,7 +62,7 @@ _ = installff()
 nav = webdriver.Chrome()
 
 nav.get('http://example.com')
-st.write(browser.page_source)
+st.write(nav.page_source)
 
 link1 = "http://192.168.3.141/"
 nav.get(link1)
