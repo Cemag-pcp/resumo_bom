@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from gspread_dataframe import set_with_dataframe
+#from gspread_dataframe import set_with_dataframe
 
 name_sheet = 'calculo de custo'
 worksheet1 = 'Base de carretas'
