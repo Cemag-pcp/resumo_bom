@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
 
-URL = ""
+URL = "http://192.168.3.141/"
 TIMEOUT = 20
 
 st.title("Test Selenium")
