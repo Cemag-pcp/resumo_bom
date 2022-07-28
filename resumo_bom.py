@@ -10,6 +10,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 #from gspread_dataframe import set_with_dataframe
 
+import os, sys
+
 name_sheet = 'calculo de custo'
 worksheet1 = 'Base de carretas'
 worksheet2 = 'Extração do BOM'
@@ -48,8 +50,20 @@ carretas.dropna(subset=['Carretas'], inplace=True)
 
 ############CHROME##################### --------------
 
-link1 = "http://192.168.3.141/"
+@st.experimental_singleton
+def installff():
+  os.system('sbase install geckodriver')
+  os.system('ln -s /home/appuser/venv/lib/python3.7/site-packages/seleniumbase/drivers/geckodriver /home/appuser/venv/bin/geckodriver')
+
+_ = installff()
+#opts = FirefoxOptions()
+#opts.add_argument("--headless")
 nav = webdriver.Chrome()
+
+nav.get('http://example.com')
+st.write(browser.page_source)
+
+link1 = "http://192.168.3.141/"
 nav.get(link1)
 
 #definindo data para exportação
